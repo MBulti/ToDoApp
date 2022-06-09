@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Swantje & Moritz ToDo</title>
+        <link type="text/css" href="./css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>Swantje und Moritz ToDo's</h2>
+            <form id="new-todo-form">
+                <input class="todotext" type="text" id="todotext" placeholder="z.B. saufen :)">
+                <input type="submit" id="submit" value="+">
+            </form>
+        </header>
+        <main>
+            <section class="todo-list">
+                <h3>ToDo</h3>
+            </section>
+        </main>
+
+        <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyBxAMLNGCysYf97rU-JDS5QFGUsB4WAs-M",
+                authDomain: "project-mytodo.firebaseapp.com",
+                projectId: "project-mytodo",
+                storageBucket: "project-mytodo.appspot.com",
+                messagingSenderId: "488394998326",
+                appId: "1:488394998326:web:3043fa73c318b2d7378e97"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+        </script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

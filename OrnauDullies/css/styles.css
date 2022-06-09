@@ -1,0 +1,30 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    background-color: lightcoral;
+}
+.todo {
+    border:1px solid gray;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+}
+.content {
+    width: auto;
+    display: flex;
+}
+.content input {
+    width: -webkit-fill-available;
+    background-color: transparent;
+    margin: 0px 0px 0px 10px;
+    border: 0px;
+}
+.todo-list {
+    overflow: hidden;
+}
+.isCompleted,
+.isCompleted .text {
+    background-color: green;
+    color: white !important;
+}
